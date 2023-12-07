@@ -37,7 +37,6 @@ then
 	ssh -i /root/.ssh/id_rsa -tt $1@$2 "sudo chmod 777 -R $3/messages/*"
 	ssh -i /root/.ssh/id_rsa -tt $1@$2 "sudo chmod 777 -R $3/web/app"
 	ssh -i /root/.ssh/id_rsa -tt $1@$2 "sudo chmod 777 -R $3/web/assets"
-	ssh -i /root/.ssh/id_rsa -tt $1@$2 "sudo chmod 777 -R $3/web/images/catalog"
 	
 	echo $'\n' "------ RUN MIGRATIONS -------------------------" $'\n'
 	
